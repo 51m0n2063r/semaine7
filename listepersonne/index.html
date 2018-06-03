@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>liste clien</title>
+    <link rel="stylesheet" href="essai.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <select id="aperçu" name="text"> 
+  <option class="btn" value="0">DUPON</option> 
+  <option class="btn" value="1">BIO</option>
+  <option class="btn" value="2">SALADE</option>
+  <option class="btn" value="3">PASTIS</option>
+</select>
+
+    <div id="r">Voici la <b>liste</b> des clients, Pour la voir veuillez cliquer sur le <strong>bouton</strong> <i>sélécteur</i> SVP.</div>
+    <script>
+        $.getJSON("clien.json", function(data) {
+            var items = [];
+            $.each(data, function(key, val) {
+                items.push(val);
+            });
+            $('.btn').click(function() {
+                console.table(items)
+                $('#r').html(items[$(this).attr('value')].nom + "<br/>" + items[$(this).attr('value')].prénom + "<br/>" + items[$(this).attr('value')].age + "<br/>" + items[$(this).attr('value')].profession + "<br/>" + items[$(this).attr('value')].mail + "<br/>" + items[$(this).attr('value')].tel)
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

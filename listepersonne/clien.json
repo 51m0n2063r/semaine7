@@ -1,0 +1,31 @@
+[
+     {
+        "nom": "DUPON",
+        "prénom": "jean",
+        "age": "21",
+        "profession": "etudiant",
+        "mail": "duponjean@sonmail.com",
+        "tel": "0606061221"
+    }, {
+        "nom": "BIO",
+        "prénom": "pizza",
+        "age": "33",
+        "profession": "bouf",
+        "mail": "boufpizza@sonmail.com",
+        "tel": "0607467892"
+    }, {
+        "nom": "Salade",
+        "prénom": "césar",
+        "age": "45",
+        "profession": "Roi",
+        "mail": "julescésar@sonmail.com",
+        "tel": "6668889993"
+    }, {
+        "nom": "PASTIS",
+        "prénom": "marselin",
+        "age": "51",
+        "profession": "barman",
+        "mail": "santébuvé@sonmail.com",
+        "tel": "0651515151"
+    }
+]
